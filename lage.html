@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utstyrsforvaltning</title>
+    <link rel="stylesheet" href="lager.css">
+</head>
+<body>
+    <h1>Utstyrsforvaltning</h1>
+
+  <!-- Søkeboks -->
+  <div class="search-container">
+    <label for="search">Søk etter utstyr</label>
+    <input type="text" id="search" placeholder="Søk etter navn...">
+  </div>
+
+  <!-- Skjema -->
+  <div class="form-container">
+    <label for="equipmentName">Legg til bilder</label>
+    <input type="file" id="fileType">
+    <label for="equipmentName">Navn på utstyr</label>
+    <input type="text" id="equipmentName" placeholder="Skriv inn nytt utstyr navn">
+    <button id="addButton">Legg til utstyr</button>
+  </div>
+
+  <!-- Statistikk -->
+  <div class="stats">
+    Totalt: <span id="totalCount">0</span> | Tilgjengelig: <span id="availableCount">0</span> | Utleid: <span id="rentedCount">0</span>
+  </div>
+
+  <!-- Meldingsboks -->
+  <div class="message" id="messageBox"></div>
+
+  <!-- Utstyrslisten -->
+   <P class="Oversikt-tekst">Oversikt over utstyr</P>
+  <ul class="equipment-list" id="equipmentList"></ul>
+
+
+
+  <script src="lager.js"></script>
+</body>
+</html>
